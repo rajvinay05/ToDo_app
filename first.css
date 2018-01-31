@@ -1,0 +1,98 @@
+@charset "ISO-8859-1";
+<style>
+*{margin:0; padding:0;}
+.wrapper{height:500px; width:1024px; margin-left:150px; position:absolute;}
+.header{height:100px; width:auto; position:relative; padding:30px 40px; background-color:#8080c0;}
+
+.header h1{margin-top:20px;font-family:monospace; text-align: center; color:white;}
+
+.box1{height:80px; width:85%; position:relative;}
+.box2{height:80px; width:15%; position:relative;}
+.box3{height:50px; width:100%;}
+
+.fl{float:left;}
+.fr{float:right;}
+.col1{background:blue;}
+.col2{background:red;}
+/*
+.nav{position:relative; margin-top:82px;}
+.nav ul{margin:0; padding:0; height:50px}
+.nav ul li{display: inline; cursor:pointer; padding: 9px 95% 20px 20px; background:#eee; font-size:20px; height:40px; transition:1.0s;}
+.nav ul li a{color:brown;}
+.nav ul li:hover{background: #ddd;}*/
+
+ul{
+	padding: 0px;
+	margin: 0px;
+}
+
+ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 50px;
+    background: #eee;
+    font-size: 18px;
+    transition: 0.2s;
+    list-style: none;
+    
+     -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    }
+    ul li:nth-child(odd) {
+    background: #fff;}
+
+    
+ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+}    
+ul li:hover{
+	background:#ddd;
+}    
+
+ul li.checked {
+    background: #888;
+    color: #fff;
+    text-decoration: line-through;
+    
+}
+.close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+}
+
+.close:hover {
+    background-color: #f44336;
+    color: white;
+}
+
+.b{border: 1px solid black;}
+
+.btn{padding:11px; width:25%; background-color:#555; cursor:pointer; transition:0.3s; border:none;float:left; font-size:16px;
+	 text-align:center; color:white;}
+.btn:hover{background-color: #bbb; color:black;}
+
+.txt{height:53%; width:98%; margin-top:10px; margin-left:20px;}
+
+input[type="text"]{
+	border: none;
+	padding:9px;
+	float: left;
+	width:70%;
+	font-size:20px;
+	border:none;
+	background-color:#eff;
+}
+</style>
